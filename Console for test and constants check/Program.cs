@@ -134,7 +134,7 @@ namespace Console_for_test_and_constants_check
             {
                 if (!ivanHash.Contains(pair.Key))
                 {
-                    Console.WriteLine(false);
+                    Console.WriteLine(false); //check for comparison
                 }
             }
         }
