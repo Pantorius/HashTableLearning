@@ -12,4 +12,13 @@
     <ProjectReference Include="..\HashSetLibrary\HashSetLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="voynaEdit.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="War and Peace.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

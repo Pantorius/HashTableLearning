@@ -26,7 +26,6 @@ namespace HashSetLibrary
 
         Node<TKey, TValue>[] _nodes;
 
-
         int _maxCapacity = int.MaxValue >> 10;
         int _count;
         int _capacity;
@@ -107,6 +106,8 @@ namespace HashSetLibrary
         bool HashingItemInArray(Node<TKey, TValue> newNode)
         {
             int i = 0;
+
+            // Не более одного прохода по массиву, хэш функция обеспечивает перечисление всех индексов.
             while (i < _capacity)
             {
                 _index = QuadraticProbing(i);
@@ -169,6 +170,8 @@ namespace HashSetLibrary
             int i = 0;
             _hash = key.GetHashCode();
 
+
+            // Не более одного прохода по массиву, хэш функция обеспечивает перечисление всех индексов.
             while (i < _capacity)
             {
                 _index = QuadraticProbing(i); //квадратичное исследование
@@ -200,6 +203,7 @@ namespace HashSetLibrary
             int i = 0;
             _hash = key.GetHashCode();
 
+            // Не более одного прохода по массиву, хэш функция обеспечивает перечисление всех индексов.
             while (i < _capacity)
             {
                 _index = QuadraticProbing(i); //квадратичное исследование

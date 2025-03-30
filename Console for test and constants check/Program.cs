@@ -7,10 +7,7 @@ namespace Console_for_test_and_constants_check
         static void Main(string[] args)
         {
             WarAndPeaceComparison();
-
             //TakeWarAndPeaceElements();
-
-
             //FindingNumbers();
         }
 
